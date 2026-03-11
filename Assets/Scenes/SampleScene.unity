@@ -206,7 +206,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 1, z: -12.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -439,6 +439,7 @@ GameObject:
   - component: {fileID: 887409767}
   - component: {fileID: 887409766}
   - component: {fileID: 887409765}
+  - component: {fileID: 887409770}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -455,7 +456,7 @@ Rigidbody:
   m_GameObject: {fileID: 887409763}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 1
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -556,12 +557,24 @@ Transform:
   m_GameObject: {fileID: 887409763}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.6, y: 2.13, z: -5.1}
+  m_LocalPosition: {x: -5.08, y: 2.13, z: -5.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!75 &887409770
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887409763}
+  m_Enabled: 1
+  m_Force: {x: 5, y: 0, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!1 &1293249057
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,6 +588,7 @@ GameObject:
   - component: {fileID: 1293249061}
   - component: {fileID: 1293249060}
   - component: {fileID: 1293249059}
+  - component: {fileID: 1293249064}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -692,12 +706,24 @@ Transform:
   m_GameObject: {fileID: 1293249057}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.6, y: 0, z: -5.1}
+  m_LocalPosition: {x: -5.08, y: 0, z: -5.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!75 &1293249064
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293249057}
+  m_Enabled: 1
+  m_Force: {x: 5, y: 0, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
